@@ -21,12 +21,12 @@ class InvoiceItemsRelationManager extends RelationManager
             ->recordTitleAttribute('id')
             ->columns([
             Tables\Columns\TextColumn::make('item.name')
-                ->label(constants::NAME_TYPO)
+                ->label("Titulo")
                 ->toggleable()
                 ->alignCenter()
                 ->sortable(),
             Tables\Columns\TextColumn::make('modified_amount')
-                ->label(constants::PRICE)
+                ->label("Precio")
                 ->sortable()
                 ->numeric()
                 ->state(fn($record)=>$record->modified_amount ?? $record->item->price)
@@ -40,16 +40,16 @@ class InvoiceItemsRelationManager extends RelationManager
                 ->alignCenter()
                 ->toggleable(true),
             Tables\Columns\TextColumn::make('item.distributor')
-                ->label(constants::DISTRIBUTOR)
+                ->label("Distribuidor")
                 ->alignCenter()
                 ->toggleable(),
             Tables\Columns\TextColumn::make('item.type.name')
-                ->label(constants::TYPE)
+                ->label("Tipo")
                 ->sortable()
                 ->alignCenter()
                 ->toggleable(),
             Tables\Columns\TextColumn::make('item.category.name')
-                ->label(constants::CATEGORY)
+                ->label("Categoria")
                 ->sortable()
                 ->alignCenter()
                 ->toggleable(),

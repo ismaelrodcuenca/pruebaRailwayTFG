@@ -21,26 +21,26 @@ class ItemsRelationManager extends RelationManager
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label(constants::NAME_TYPO),
+                    ->label("Titulo"),
                 Forms\Components\TextInput::make('cost')
                     ->numeric()
                     ->required()
-                    ->label(constants::COST),
+                    ->label("Costo"),
                 Forms\Components\TextInput::make('price')
                     ->numeric()
                     ->required()
-                    ->label(constants::PRICE),
+                    ->label("Precio"),
                 Forms\Components\TextInput::make('distributor')
                     ->required()
-                    ->label(constants::DISTRIBUTOR),
+                    ->label("Distribuidor"),
                 Forms\Components\Select::make('type_id')
                     ->relationship('type', 'name')
                     ->required()
-                    ->label(constants::TYPE),
+                    ->label("Tipo"),
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required()
-                    ->label(constants::CATEGORY),
+                    ->label("Categoria"),
             ]);
     }
 
@@ -49,23 +49,23 @@ class ItemsRelationManager extends RelationManager
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->label(constants::NAME_TYPO)
+                    ->label("Titulo")
                     ->searchable()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('cost')
-                    ->label(constants::COST)
+                    ->label("Costo")
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
-                    ->label(constants::PRICE)
+                    ->label("Precio")
                     ->sortable(),
                 Tables\Columns\TextColumn::make('distributor')
-                    ->label(constants::DISTRIBUTOR)
+                    ->label("Distribuidor")
                     ->searchable(),
                 Tables\Columns\TextColumn::make('type.name')
-                    ->label(constants::TYPE)
+                    ->label("Tipo")
                     ->sortable(),
                 Tables\Columns\TextColumn::make('category.name')
-                    ->label(constants::CATEGORY)
+                    ->label("Categoria")
                     ->sortable(),
             ])
             ->filters([

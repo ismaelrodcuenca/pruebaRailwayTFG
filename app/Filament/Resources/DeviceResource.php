@@ -112,10 +112,10 @@ class DeviceResource extends Resource
                                 ->label('No Serial or IMEI')
                                 ->default(false),
                             Forms\Components\TextInput::make('serial_number')
-                                ->label(constants::SERIAL_NUMBER)
+                                ->label("Número de Serie")
                                 ->nullable(),
                             Forms\Components\TextInput::make('IMEI')
-                                ->label(constants::IMEI)
+                                ->label("IMEI")
                                 ->nullable()
                         ]),
 
@@ -154,11 +154,11 @@ class DeviceResource extends Resource
                             Section::make()
                                 ->schema([
                                     TextInput::make('colour')
-                                        ->label(constants::COLOUR)
+                                        ->label("Color")
                                         ->required(),
 
                                     TextInput::make('unlock_code')
-                                        ->label(constants::UNLOCK_CODE)
+                                        ->label("Código")
                                         ->nullable(),
                                 ])
                                 ->columnSpan(1),
@@ -179,7 +179,7 @@ class DeviceResource extends Resource
                     ->alignCenter()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('model.name')
-                    ->label(constants::MODELO)
+                    ->label("Modelos")
                     ->sortable()
                     ->alignCenter()
                     ->searchable()
@@ -193,7 +193,7 @@ class DeviceResource extends Resource
                     ->alignCenter(),
                     
                 Tables\Columns\TextColumn::make('client.document')
-                    ->label(constants::CLIENT)
+                    ->label("Cliente")
                     ->sortable()
                     ->alignCenter()
                     ->state(function ($record) {
@@ -207,25 +207,25 @@ class DeviceResource extends Resource
                     ->searchable()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('serial_number')
-                    ->label(constants::SERIAL_NUMBER)
+                    ->label("Número de Serie")
                     ->sortable()
                     ->alignCenter()
                     ->searchable()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('IMEI')
-                    ->label(constants::IMEI)
+                    ->label("IMEI")
                     ->sortable()
                     ->searchable()
                     ->alignCenter()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('colour')
-                    ->label(constants::COLOUR)
+                    ->label("Color")
                     ->sortable()
                     ->searchable()
                     ->alignCenter()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('unlock_code')
-                    ->label(constants::UNLOCK_CODE)
+                    ->label("Código")
                     ->sortable()
                     ->searchable()
                     ->alignCenter()

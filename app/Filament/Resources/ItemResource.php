@@ -41,25 +41,25 @@ class ItemResource extends Resource
             ->schema([
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label(constants::NAME_TYPO),
+                    ->label("Titulo"),
                 Forms\Components\TextInput::make('cost')
                     ->numeric()
                     ->required()
-                    ->label(constants::COST),
+                    ->label("Costo"),
                 Forms\Components\TextInput::make('price')
                     ->numeric()
                     ->required()
-                    ->label(constants::PRICE),
+                    ->label("Precio"),
                 Forms\Components\TextInput::make('distributor')
                     ->required()
-                    ->label(constants::DISTRIBUTOR),
+                    ->label("Distribuidor"),
                 Forms\Components\Select::make('type_id')
                     ->relationship('type', 'name')
-                    ->label(constants::TYPE),
+                    ->label("Tipo"),
                 Forms\Components\Select::make('category_id')
                     ->relationship('category', 'name')
                     ->required()
-                    ->label(constants::CATEGORY),
+                    ->label("Categoria"),
                 Toggle::make('link_to_stores')
                     ->label('Asociar a todas las tiendas')
                     ->required()
@@ -99,13 +99,13 @@ class ItemResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('name')
-                    ->label(constants::NAME_TYPO)
+                    ->label("Titulo")
                     ->searchable()
                     ->toggleable()
                     ->alignCenter()
                     ->sortable(),
                 Tables\Columns\TextColumn::make('price')
-                    ->label(constants::PRICE)
+                    ->label("Precio")
                     ->sortable()
                     ->numeric()
                     ->alignCenter()
@@ -118,17 +118,17 @@ class ItemResource extends Resource
                     ->alignCenter()
                     ->toggleable(true),
                 Tables\Columns\TextColumn::make('distributor')
-                    ->label(constants::DISTRIBUTOR)
+                    ->label("Distribuidor")
                     ->searchable()
                     ->alignCenter()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('type.name')
-                    ->label(constants::TYPE)
+                    ->label("Tipo")
                     ->sortable()
                     ->alignCenter()
                     ->toggleable(),
                 Tables\Columns\TextColumn::make('category.name')
-                    ->label(constants::CATEGORY)
+                    ->label("Categoria")
                     ->sortable()
                     ->alignCenter()
                     ->toggleable(),

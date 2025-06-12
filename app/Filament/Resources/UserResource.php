@@ -65,17 +65,17 @@ class UserResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')
-                ->label(constants::NAME)
+                ->label("Nombre")
                 ->inlineLabel(true)
                 ->required()
                 ->columnSpan(1),
                 TextInput::make('email')
-                ->label(constants::EMAIL)
+                ->label("Email")
                 ->required()
                 ->columnSpan(1)
                 ->inlineLabel(true),
 
-                TextInput::make('password')->label(constants::PASSWORD)
+                TextInput::make('password')->label("Contraseña")
                 ->dehydrated(fn($get)=> $get('password') !== null && $get('password') !== '' ? true : false
                 )
                 ->columnSpan(1)
@@ -106,12 +106,12 @@ class UserResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->label(constants::NAME)
+                    ->label("Nombre")
                     ->sortable()
                     ->alignCenter()
                     ->color(fn ($record) => $record->active ? '' : Color::hex('#c3c3c3' )),
                 TextColumn::make('email')
-                    ->label(constants::EMAIL)
+                    ->label("Email")
                     ->sortable()
                     ->color(fn ($record) => $record->active ? '' : Color::hex('#c3c3c3' ))
                     ->alignCenter()

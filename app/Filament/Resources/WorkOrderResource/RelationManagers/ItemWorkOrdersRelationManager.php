@@ -90,27 +90,27 @@ class ItemWorkOrdersRelationManager extends RelationManager
                     ->form([
                         Forms\Components\TextInput::make('name')
                             ->required()
-                            ->label(constants::NAME_TYPO),
+                            ->label("Titulo"),
                         Forms\Components\TextInput::make('cost')
                             ->numeric()
                             ->required()
-                            ->label(constants::COST),
+                            ->label("Costo"),
                         Forms\Components\TextInput::make('price')
                             ->numeric()
                             ->required()
-                            ->label(constants::PRICE),
+                            ->label("Precio"),
                         Forms\Components\TextInput::make('distributor')
                             ->required()
-                            ->label(constants::DISTRIBUTOR),
+                            ->label("Distribuidor"),
                         Forms\Components\Select::make('type_id')
                             ->relationship('type', 'name')
                             ->options(Type::orderBy('name')->pluck('name', 'id')->toArray())
-                            ->label(constants::TYPE),
+                            ->label("Tipo"),
                         Forms\Components\Select::make('category_id')
                             ->relationship('category', 'name')
                             ->options(Category::orderBy('name')->pluck('name','id')->toArray())
                             ->required()
-                            ->label(constants::CATEGORY),
+                            ->label("Categoria"),
                         Toggle::make('link_to_stores')
                             ->label('Asociar a todas las tiendas')
                             ->required()

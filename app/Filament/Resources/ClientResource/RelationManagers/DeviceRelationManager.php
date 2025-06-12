@@ -95,7 +95,7 @@ class DeviceRelationManager extends RelationManager
                                 ->default(false)
                                 ->reactive(),
                             Forms\Components\TextInput::make('serial_number')
-                                ->label(constants::SERIAL_NUMBER)
+                                ->label("Número de Serie")
                                 ->nullable(fn(callable $get) => $get('has_no_serial_or_imei') === true)
                                 ->reactive()
                                 ->required(
@@ -113,7 +113,7 @@ class DeviceRelationManager extends RelationManager
                                 )
                                 ->disabled(fn(callable $get) => $get('has_no_serial_or_imei') === true),
                             Forms\Components\TextInput::make('IMEI')
-                                ->label(constants::IMEI)
+                                ->label("IMEI")
                                 ->nullable(fn(callable $get) => $get('has_no_serial_or_imei') === true)
                                 ->required(
                                     function (callable $get) {
@@ -170,11 +170,11 @@ class DeviceRelationManager extends RelationManager
                             Section::make()
                                 ->schema([
                                     TextInput::make('colour')
-                                        ->label(constants::COLOUR)
+                                        ->label("Color")
                                         ->required(),
 
                                     TextInput::make('unlock_code')
-                                        ->label(constants::UNLOCK_CODE)
+                                        ->label("Código")
                                         ->nullable(),
                                 ])
                                 ->columnSpan(1),
@@ -202,17 +202,17 @@ class DeviceRelationManager extends RelationManager
                 Tables\Columns\TextColumn::make('model.brand.name')
                     ->label('Marca'),
                 Tables\Columns\TextColumn::make('model.name')
-                    ->label(constants::MODELO),
+                    ->label("Modelos"),
                 Tables\Columns\TextColumn::make('serial_number')
-                    ->label(constants::SERIAL_NUMBER)
+                    ->label("Número de Serie")
                     ->default('Sin Serial'),
                 Tables\Columns\TextColumn::make('IMEI')
-                    ->label(constants::IMEI)
+                    ->label("IMEI")
                     ->default('Sin IMEI'),
                 Tables\Columns\TextColumn::make('colour')
-                    ->label(constants::COLOUR),
+                    ->label("Color"),
                 Tables\Columns\TextColumn::make('unlock_code')
-                    ->label(constants::UNLOCK_CODE)
+                    ->label("Código")
                     ->toggleable(),
             ])
             ->recordUrl(fn($record) => url("/dashboard/devices/{$record->id}/edit"))

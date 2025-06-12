@@ -34,7 +34,7 @@ class TypeResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->label(constants::NAME)->required(),
+                TextInput::make('name')->label("Nombre")->required(),
             ]);
     }
 
@@ -43,7 +43,7 @@ class TypeResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                ->label(constants::NAME_TYPO)
+                ->label("Titulo")
                 ->sortable()
                 ->searchable(),
             ])

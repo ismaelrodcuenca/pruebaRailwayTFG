@@ -41,8 +41,8 @@ class CategoryResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->label(constants::NAME)->required(),
-                Select::make('tax_id')->label(constants::PERCENTAJE)->relationship('tax', 'percentage')->required()->suffix('%')
+                TextInput::make('name')->label("Nombre")->required(),
+                Select::make('tax_id')->label("Porcentaje")->relationship('tax', 'percentage')->required()->suffix('%')
             ]);
     }
 
@@ -52,15 +52,15 @@ class CategoryResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                    ->label(constants::NAME_TYPO)
+                    ->label("Titulo")
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('tax.name')
-                    ->label(constants::TAX)
+                    ->label("Impuestos")
                     ->sortable()
                     ->searchable(),
                 TextColumn::make('tax.percentage')
-                    ->label(constants::PERCENTAJE)
+                    ->label("Porcentaje")
                     ->sortable()
                     ->searchable()->suffix('%'),
             ])

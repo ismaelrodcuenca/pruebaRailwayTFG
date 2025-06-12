@@ -39,8 +39,8 @@ class TaxResource extends Resource
     {
         return $form
             ->schema([
-                TextInput::make('name')->label(constants::NAME)->required(),
-                TextInput::make('percentage')->label(constants::PERCENTAJE)->required()->numeric()->prefix('%'),
+                TextInput::make('name')->label("Nombre")->required(),
+                TextInput::make('percentage')->label("Porcentaje")->required()->numeric()->prefix('%'),
             ]);
     }
 
@@ -49,11 +49,11 @@ class TaxResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('name')
-                ->label(constants::NAME_TYPO)
+                ->label("Titulo")
                 ->sortable()
                 ->searchable(),
                 TextColumn::make('percentage')
-                ->label(constants::PERCENTAJE)
+                ->label("Porcentaje")
                 ->sortable()
                 ->searchable(),
             ])
