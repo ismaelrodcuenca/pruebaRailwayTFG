@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1920"
+   height="1080"
+   viewBox="0 0 1920 1080"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="logotipo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="0.31692708"
+     inkscape:cx="782.51439"
+     inkscape:cy="635.79294"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer2" />
+  <defs
+     id="defs1">
+    <rect
+       x="741.49549"
+       y="22.0871"
+       width="1101.1997"
+       height="952.90059"
+       id="rect1" />
+    <rect
+       x="765.27895"
+       y="307.89649"
+       width="129.40577"
+       height="104.8633"
+       id="rect6" />
+    <rect
+       x="999.54802"
+       y="254.34927"
+       width="821.0573"
+       height="611.33071"
+       id="rect3" />
+    <rect
+       x="765.27893"
+       y="307.89648"
+       width="129.40578"
+       height="104.8633"
+       id="rect6-7" />
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 1">
+    <text
+       xml:space="preserve"
+       id="text6"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64px;font-family:Roboto;-inkscape-font-specification:'Roboto, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect6);fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.524632;stroke-dasharray:none;stroke-opacity:1"
+       transform="matrix(9.8241271,0,0,9.6381226,-7489.9373,-2773.7223)"><tspan
+         x="765.2793"
+         y="363.89648"
+         id="tspan3"><tspan
+           style="fill:#083b5d"
+           id="tspan2">ERP</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text6-6"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:64px;font-family:Roboto;-inkscape-font-specification:'Roboto,  weight=250';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect6-7);fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.524616;stroke-opacity:1"
+       transform="matrix(9.8241271,0,0,9.6381226,-6359.8943,-2776.6143)"><tspan
+         x="765.2793"
+         y="363.89648"
+         id="tspan5"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Roboto, Light';fill:#2f85b6"
+           id="tspan4">air</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       id="text1"
+       style="fill:#d3bfa5;-inkscape-font-specification:'Roboto, Light';font-family:Roboto;font-size:622.7635498px;font-weight:300;stroke-width:5.105;font-style:normal;font-stretch:normal;font-variant:normal;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;white-space:pre;shape-inside:url(#rect1)" />
+  </g>
+</svg>
